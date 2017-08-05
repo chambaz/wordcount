@@ -1,6 +1,38 @@
 <html>
   <head>
-    <title>Word Count</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=YES">
+
+    <title>Word and character counter tool</tite>
+    <meta name="author" content="Digital Surgeons" />
+    <meta name="description" content="A word and character counter tool from Digital Surgeons" />
+
+    <meta property="og:url" content="https://www.digitalsurgeons.com" />
+    <meta property="og:type" content="website"/>
+    <meta property="fb:page_id" content="26941908606" />
+    <meta property="fb:pages" content="26941908606" />
+    <meta property="og:title" content="Word and character counter tool" />
+    <meta property="og:description" content="A word and character counter tool from Digital Surgeons." />
+    <meta property="og:image" content="https://www.digitalsurgeons.com/share.jpg" />
+
+    <meta itemprop="name" content="Word and character counter tool" />
+    <meta itemprop="description" content="A word and character counter tool from Digital Surgeons." />
+    <meta itemprop="image" content="https://www.digitalsurgeons.com/share.jpg" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@digitalsurgeons" />
+    <meta name="twitter:site:id" content="18189130" />
+    <meta name="twitter:title" content="Word and character counter tool" />
+    <meta name="twitter:description" content="A word and character counter tool from Digital Surgeons." />
+    <meta name="twitter:image" content="https://www.digitalsurgeons.com/share.jpg" />
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="canonical" href="https://www.digitalsurgeons.com" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f18333">
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400" rel="stylesheet">
     <link href="styles.css" rel="stylesheet" />
   </head>
@@ -8,15 +40,19 @@
 
     <ul class="stats">
       <li class="stats__stat">
-        Words: <span>0</span>
+        Words: <span data-count="words">0</span>
       </li>
       <li class="stats__stat">
-        Characters: <span>0</span>
+        Characters: <span data-count="chars">0</span>
       </li>
     </ul>
 
-    <textarea class="canvas" autofocus></textarea>
+    <textarea class="canvas" data-canvas autofocus></textarea>
 
-    <script src="app.js"></script>
+    <footer class="footer">
+      Made with ❤️ &nbsp;at <img class="footer__ds" src="ds.svg" />
+    </footer>
+
+    <script src="bundle.js"></script>
   </body>
 </html>

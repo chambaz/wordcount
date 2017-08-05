@@ -1,11 +1,19 @@
 {
   "name": "wordcount",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Word and character counter",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "browserify app.js -o bundle.js -t [ babelify --presets [ es2015 ] ]"
   },
   "author": "Adam Chambers <adammchambers@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "word-count": "^0.2.2"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0"
+  }
 }
