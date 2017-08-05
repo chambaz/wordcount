@@ -1,0 +1,11 @@
+{
+  "name": "wordcount",
+  "version": "0.0.0",
+  "description": "Word and character counter",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adam Chambers <adammchambers@gmail.com>",
+  "license": "ISC"
+}
